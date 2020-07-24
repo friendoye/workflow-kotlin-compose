@@ -112,10 +112,9 @@ private fun DrawScope.drawHatch(
   spaceWidth: Dp,
   angle: Float
 ) {
-  val strokeWidthPx = strokeWidth.toPx().value
-  val spaceWidthPx = spaceWidth.toPx().value
+  val strokeWidthPx = strokeWidth.toPx()
+  val spaceWidthPx = spaceWidth.toPx()
   val strokeColor = color.scaleColors(.5f)
-  val stroke = Stroke(width = strokeWidthPx)
 
   rotate(angle) {
     // Draw outside our bounds to fill the space even when rotated.
@@ -130,7 +129,7 @@ private fun DrawScope.drawHatch(
           strokeColor,
           Offset(left, y),
           Offset(right, y),
-          stroke = stroke
+          strokeWidth = strokeWidthPx
       )
       y += spaceWidthPx * 2
     }

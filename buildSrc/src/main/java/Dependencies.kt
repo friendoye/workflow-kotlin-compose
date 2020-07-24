@@ -19,15 +19,15 @@ import java.util.Locale.US
 import kotlin.reflect.full.declaredMembers
 
 object Versions {
-  const val compose = "0.1.0-dev12"
-  const val kotlin = "1.3.71"
+  const val compose = "0.1.0-dev14"
+  const val kotlin = "1.3.72"
   const val targetSdk = 29
   const val workflow = "0.28.0"
 }
 
 @Suppress("unused")
 object Dependencies {
-  const val android_gradle_plugin = "com.android.tools.build:gradle:4.2.0-alpha01"
+  const val android_gradle_plugin = "com.android.tools.build:gradle:4.2.0-alpha05"
 
   object AndroidX {
     const val appcompat = "androidx.appcompat:appcompat:1.1.0"

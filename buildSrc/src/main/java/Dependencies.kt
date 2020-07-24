@@ -22,7 +22,7 @@ object Versions {
   const val compose = "0.1.0-dev14"
   const val kotlin = "1.3.72"
   const val targetSdk = 29
-  const val workflow = "0.28.0"
+  const val workflow = "1.0.0-alpha.1"
 }
 
 @Suppress("unused")

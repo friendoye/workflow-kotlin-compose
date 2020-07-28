@@ -77,9 +77,9 @@ subprojects {
   tasks.withType<KotlinCompile>() {
     kotlinOptions {
       // Allow warnings when running from IDE, makes it easier to experiment.
-      if (!isRunningFromIde) {
-        allWarningsAsErrors = true
-      }
+      //if (!isRunningFromIde) {
+      //  allWarningsAsErrors = true
+      //}
 
       jvmTarget = "1.8"
 

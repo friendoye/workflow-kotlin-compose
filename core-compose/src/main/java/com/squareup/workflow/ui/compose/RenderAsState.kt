@@ -161,7 +161,7 @@ inline fun <RenderingT> Workflow<Unit, Nothing, RenderingT>.renderAsState(
   snapshotKey: String? = null
 ): State<RenderingT> {
   @Suppress("DEPRECATION")
-  val coroutineContext = CoroutineContextAmbient.current + Dispatchers.Main.immediate
+  val coroutineContext = Dispatchers.Main.immediate
   val snapshotState = savedInstanceState(key = snapshotKey, saver = SnapshotSaver) { null }
 
   val outputRef = remember { Ref<(OutputT) -> Unit>() }
